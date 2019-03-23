@@ -14,13 +14,13 @@ class IndexController extends Controller{
 
     }
     public function apiLogin(Request $request){
-     $email=$request->input('u_email');
-     $password=$request->input('u_pass');
+     $email=$request->input('email');
+     $password=$request->input('pass');
      $data =[
-         'u_email' =>$email,
-         'u_pass'  =>$password
+         'email' =>$email,
+         'pass'  =>$password
      ];
-     $url='http://pass.cms.com/pass/login';
+     $url='http://xiuge.52self.cn/pss';
      $ch =curl_init($url);
      curl_setopt($ch,CURLOPT_HEADER,0);
      curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);

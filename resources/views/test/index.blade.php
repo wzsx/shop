@@ -70,7 +70,7 @@
         @if($login==1)
             <a href="{{ url('/home') }}">Home</a>
         @else
-            <a href="http://pass.cms.com/pass/user?redirect={{$current_url}}">登录</a>
+            <a href="http://pass.52xiuge.com/pass/userl?redirect={{$current_url}}">登录</a>
             <a href="{{ route('register') }}">Register</a>
 
         @endif
