@@ -39,7 +39,7 @@ class IndexController extends Controller{
      return $response;
     }
     public function xxx(){
-        
+
     }
 }
 
