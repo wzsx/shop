@@ -14,8 +14,8 @@ class CheckCookie
      * @return mixed
      */
     public function handle($request,Closure $next){
-        if(isset($_COOKIE['id'])&& isset($_COOKIE['token'])){
-            $key ='str:u:token:'.$_COOKIE['id'];
+        if(isset($_COOKIE['uid'])&& isset($_COOKIE['token'])){
+            $key ='str:u:token:'.$_COOKIE['uid'];
             //print_r($key);die;
             $token =Redis::hGet($key,'web');
             if($_COOKIE['token']==$token){
